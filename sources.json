@@ -1,0 +1,419 @@
+[
+  [
+    "S01",
+    "AZ 305 skills measured",
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"
+  ],
+  [
+    "S02",
+    "AZ 305 exam page",
+    "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/"
+  ],
+  [
+    "S03",
+    "Azure Solutions Architect Expert certification",
+    "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/"
+  ],
+  [
+    "S04",
+    "Official practice assessment supplied by the learner",
+    "https://aiskillsnavigator.microsoft.com/en-us/credentials/cert-45b05816a546e99ea5872f433ac74e8fe88c3614934fe90ab2dad0c10bcb313c?search=azure+architecture",
+    "Linked entry point; assessment questions not accessed"
+  ],
+  [
+    "S05",
+    "ExamTopics AZ 305 discussion reference",
+    "https://www.examtopics.com/exams/microsoft/az-305/",
+    "Third party; HTTP 403; individual questions and answers not verified"
+  ],
+  [
+    "S06",
+    "Exam duration and experience",
+    "https://learn.microsoft.com/en-us/credentials/support/exam-duration-exam-experience"
+  ],
+  [
+    "S07",
+    "Exam security policy",
+    "https://learn.microsoft.com/en-us/credentials/support/exam-and-assessment-lab-security-policies"
+  ],
+  [
+    "S08",
+    "Azure Well Architected Framework",
+    "https://learn.microsoft.com/en-us/azure/well-architected/"
+  ],
+  [
+    "S09",
+    "Cloud Adoption Framework",
+    "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview"
+  ],
+  [
+    "S10",
+    "Azure RBAC",
+    "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+  ],
+  [
+    "S11",
+    "Microsoft Entra PIM",
+    "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure"
+  ],
+  [
+    "S12",
+    "Conditional Access",
+    "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+  ],
+  [
+    "S13",
+    "Managed identities",
+    "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"
+  ],
+  [
+    "S14",
+    "Active Directory and Microsoft Entra ID compared",
+    "https://learn.microsoft.com/en-us/entra/fundamentals/compare"
+  ],
+  [
+    "S15",
+    "External ID customer tenants",
+    "https://learn.microsoft.com/en-us/entra/external-id/customers/overview-customers-ciam"
+  ],
+  [
+    "S16",
+    "Azure AD B2C FAQ",
+    "https://learn.microsoft.com/en-us/azure/active-directory-b2c/faq"
+  ],
+  [
+    "S17",
+    "Azure Policy effects",
+    "https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics"
+  ],
+  [
+    "S18",
+    "Resource locks",
+    "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources"
+  ],
+  [
+    "S19",
+    "Azure Monitor Agent",
+    "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview"
+  ],
+  [
+    "S20",
+    "Diagnostic settings",
+    "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings"
+  ],
+  [
+    "S21",
+    "Log retention",
+    "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure"
+  ],
+  [
+    "S22",
+    "Workspace replication",
+    "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-replication"
+  ],
+  [
+    "S23",
+    "Azure Monitor alerts",
+    "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview"
+  ],
+  [
+    "S24",
+    "Azure SQL deployment choices",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql"
+  ],
+  [
+    "S25",
+    "SQL elastic pools",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-pool-overview?view=azuresql"
+  ],
+  [
+    "S26",
+    "SQL serverless compute",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/serverless-tier-overview?view=azuresql"
+  ],
+  [
+    "S27",
+    "SQL Hyperscale",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tier-hyperscale?view=azuresql"
+  ],
+  [
+    "S28",
+    "SQL failover groups",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql"
+  ],
+  [
+    "S29",
+    "SQL automated backups",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql"
+  ],
+  [
+    "S30",
+    "SQL long term retention",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql"
+  ],
+  [
+    "S31",
+    "Cosmos DB consistency",
+    "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels"
+  ],
+  [
+    "S32",
+    "Cosmos DB transactional batch",
+    "https://learn.microsoft.com/en-us/azure/cosmos-db/transactional-batch"
+  ],
+  [
+    "S33",
+    "Cosmos DB partitioning",
+    "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview"
+  ],
+  [
+    "S34",
+    "Storage redundancy",
+    "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy"
+  ],
+  [
+    "S35",
+    "Blob access tiers",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+  ],
+  [
+    "S36",
+    "Blob data protection",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/data-protection-overview"
+  ],
+  [
+    "S37",
+    "Blob immutability",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/immutable-storage-overview"
+  ],
+  [
+    "S38",
+    "ADLS access control",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control-model"
+  ],
+  [
+    "S39",
+    "Data models",
+    "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/understand-data-store-models"
+  ],
+  [
+    "S40",
+    "Integration runtimes",
+    "https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime"
+  ],
+  [
+    "S41",
+    "Analytical processing",
+    "https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/online-analytical-processing"
+  ],
+  [
+    "S42",
+    "Dynamic data masking",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql"
+  ],
+  [
+    "S43",
+    "Enhanced VM backup policy",
+    "https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-enhanced-policy"
+  ],
+  [
+    "S44",
+    "Immutable backup vaults",
+    "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept"
+  ],
+  [
+    "S45",
+    "Backup multi user authorisation",
+    "https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization"
+  ],
+  [
+    "S46",
+    "Backup secure by default",
+    "https://learn.microsoft.com/en-us/azure/backup/secure-by-default"
+  ],
+  [
+    "S47",
+    "Site Recovery FAQ",
+    "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-common-questions"
+  ],
+  [
+    "S48",
+    "Site Recovery test failover",
+    "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-test-failover-to-azure"
+  ],
+  [
+    "S49",
+    "Availability zones",
+    "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+  ],
+  [
+    "S50",
+    "Region pairs and nonpaired regions",
+    "https://learn.microsoft.com/en-us/azure/reliability/regions-paired"
+  ],
+  [
+    "S51",
+    "Compute selection",
+    "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"
+  ],
+  [
+    "S52",
+    "Functions hosting plans",
+    "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale"
+  ],
+  [
+    "S53",
+    "AKS scaling",
+    "https://learn.microsoft.com/en-us/azure/aks/concepts-scale"
+  ],
+  [
+    "S54",
+    "Container Apps scaling",
+    "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+  ],
+  [
+    "S55",
+    "App Service deployment slots",
+    "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots"
+  ],
+  [
+    "S56",
+    "Azure Batch",
+    "https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview"
+  ],
+  [
+    "S57",
+    "SQL VM storage guidance",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-storage?view=azuresql"
+  ],
+  [
+    "S58",
+    "Azure load balancing choices",
+    "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview"
+  ],
+  [
+    "S59",
+    "Private endpoints",
+    "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview"
+  ],
+  [
+    "S60",
+    "VNet peering",
+    "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview"
+  ],
+  [
+    "S61",
+    "ExpressRoute encryption",
+    "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-about-encryption"
+  ],
+  [
+    "S62",
+    "Virtual WAN",
+    "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about"
+  ],
+  [
+    "S63",
+    "Traffic Manager DNS routing",
+    "https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-how-it-works"
+  ],
+  [
+    "S64",
+    "Asynchronous messaging",
+    "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging"
+  ],
+  [
+    "S65",
+    "Service Bus duplicate detection",
+    "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection"
+  ],
+  [
+    "S66",
+    "Cache aside",
+    "https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside"
+  ],
+  [
+    "S67",
+    "Redis retirement FAQ",
+    "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq"
+  ],
+  [
+    "S68",
+    "API Management",
+    "https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts"
+  ],
+  [
+    "S69",
+    "App Configuration",
+    "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview"
+  ],
+  [
+    "S70",
+    "Circuit breaker",
+    "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker"
+  ],
+  [
+    "S71",
+    "Azure Catalyst formerly Azure Migrate",
+    "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate"
+  ],
+  [
+    "S72",
+    "Database Migration Service",
+    "https://learn.microsoft.com/en-us/azure/dms/dms-overview"
+  ],
+  [
+    "S73",
+    "AzCopy and migration guidance",
+    "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10"
+  ],
+  [
+    "S74",
+    "Key Vault key types",
+    "https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys"
+  ],
+  [
+    "S75",
+    "Managed HSM algorithms",
+    "https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/about-keys-details"
+  ],
+  [
+    "S76",
+    "Configure Cosmos DB consistency and sessions",
+    "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-consistency"
+  ],
+  [
+    "S77",
+    "SQL business continuity",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql"
+  ],
+  [
+    "S78",
+    "Hybrid authentication choices",
+    "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/choose-ad-authn"
+  ],
+  [
+    "S79",
+    "Azure Policy remediation",
+    "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources"
+  ],
+  [
+    "S80",
+    "Azure Files",
+    "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+  ],
+  [
+    "S81",
+    "Event Grid delivery and retry",
+    "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry"
+  ],
+  [
+    "S82",
+    "Event Hubs features",
+    "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features"
+  ],
+  [
+    "S83",
+    "Blob lifecycle management",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview"
+  ]
+]
