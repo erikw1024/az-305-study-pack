@@ -31,6 +31,9 @@
   function activate() {
     let target = null;
     try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch { /* Fall back to overview. */ }
+    if (target?.id === 'main' && document.querySelector('[data-page].active')) {
+      target.focus(); closeMenu(); results.hidden = true; return;
+    }
     let page = target?.closest('[data-page]') || document.getElementById('home');
     pages.forEach(p => p.classList.toggle('active', p === page));
     nav.forEach(a => {
