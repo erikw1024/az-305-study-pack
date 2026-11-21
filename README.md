@@ -27,7 +27,13 @@ Progress and selected answers are stored only in the current browser's local sto
 
 Publish `main` from the repository root in **Settings > Pages**. `.nojekyll` keeps the static files unchanged. All assets use relative paths so the site works under the project path.
 
-## Currency
+## Phone layout verification
+
+Updated 22 November 2026. Browser viewport checks covered 320, 375, 390 and 430 pixel phone widths, 844 by 390 landscape, and 1280 pixel desktop. Checks included section navigation, horizontal table scrolling, search, domain and answer-status filters, question scoring, saved answers, reading progress, outside-tap menu dismissal and Escape-key recovery. No page-level horizontal overflow was found in the checked sections.
+
+Phone controls have larger tap areas, text inputs and filters use 16 pixel text, wide tables show a scroll hint, and the navigation drawer prevents background scrolling. These are browser viewport checks, not physical iOS or Android device acceptance.
+
+## Content currency
 
 Edition 1.0, 21 November 2026. Exam scope checked against the Microsoft skills measured outline effective 17 April 2026. Recheck current service limits, availability, product lifecycle and exam arrangements before relying on them.
 

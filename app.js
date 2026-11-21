@@ -19,15 +19,44 @@
   const status = document.getElementById('status-filter');
   const search = document.getElementById('search');
   const results = document.getElementById('search-results');
+  const mobileLayout = window.matchMedia('(max-width: 760px)');
+  const backdrop = document.createElement('button');
+  backdrop.type = 'button'; backdrop.className = 'nav-backdrop'; backdrop.hidden = true;
+  backdrop.setAttribute('aria-label', 'Close navigation');
+  sidebar.before(backdrop);
   function save() {
     try { localStorage.setItem(storeKey, JSON.stringify(state)); }
     catch { document.querySelector('.local-progress small').textContent = 'Storage is unavailable; this session still works.'; }
   }
-  function closeMenu() { sidebar.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); }
+  function closeMenu() {
+    sidebar.classList.remove('open'); menu.setAttribute('aria-expanded', 'false');
+    menu.textContent = 'Menu'; backdrop.hidden = true;
+    document.documentElement.classList.remove('nav-open');
+  }
+  backdrop.addEventListener('click', () => { closeMenu(); menu.focus(); });
+  mobileLayout.addEventListener('change', () => { closeMenu(); syncTables(); });
   menu.addEventListener('click', () => {
     const open = !sidebar.classList.contains('open');
-    sidebar.classList.toggle('open', open); menu.setAttribute('aria-expanded', String(open));
+    if (!open) { closeMenu(); return; }
+    sidebar.classList.add('open'); menu.setAttribute('aria-expanded', 'true');
+    menu.textContent = 'Close'; backdrop.hidden = false; results.hidden = true;
+    document.documentElement.classList.add('nav-open');
   });
+  const tableRegions = [...document.querySelectorAll('.table-scroll')];
+  tableRegions.forEach((region, index) => {
+    const hint = document.createElement('p');
+    hint.id = `table-scroll-hint-${index}`; hint.className = 'table-hint';
+    hint.textContent = 'Swipe sideways to see all columns.'; hint.hidden = true;
+    region.before(hint); region.setAttribute('aria-describedby', hint.id);
+  });
+  function syncTables() {
+    tableRegions.forEach(region => {
+      const overflow = region.clientWidth > 0 && region.scrollWidth > region.clientWidth + 1;
+      document.getElementById(region.getAttribute('aria-describedby')).hidden = !overflow || !mobileLayout.matches;
+      region.tabIndex = overflow ? 0 : -1;
+    });
+  }
+  window.addEventListener('resize', syncTables);
   function activate() {
     let target = null;
     try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch { /* Fall back to overview. */ }
@@ -44,6 +73,7 @@
     closeMenu(); results.hidden = true;
     if (target?.matches('[data-question]')) { domain.value = 'all'; status.value = 'all'; filterQuiz(); }
     requestAnimationFrame(() => {
+      syncTables();
       if (target && target !== page) target.scrollIntoView({block: 'start'}); else window.scrollTo({top: 0});
     });
   }
@@ -147,7 +177,11 @@
   });
   document.addEventListener('keydown', e => {
     if (e.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) { e.preventDefault(); search.focus(); }
-    if (e.key === 'Escape') { results.hidden = true; closeMenu(); search.blur(); }
+    if (e.key === 'Escape') {
+      const wasOpen = sidebar.classList.contains('open');
+      results.hidden = true; closeMenu(); search.blur();
+      if (wasOpen) menu.focus();
+    }
   });
   let printDetails = [];
   window.addEventListener('beforeprint', () => {
