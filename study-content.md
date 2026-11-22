@@ -2,7 +2,7 @@
 
 Architecture decisions and exam preparation after AZ 104
 
-**Edition 1.0 | Prepared 21 November 2026 | Australian English**
+**Edition 1.1 | Expanded 22 November 2026 | Australian English**
 
 This pack helps you move from administering Azure to choosing and defending an architecture. Use it to identify requirements, reject unsuitable services, explain trade-offs and test recovery assumptions. Your AZ-104 knowledge is the starting point; spend most of your effort on decisions across services rather than repeating portal procedures.
 
@@ -23,6 +23,10 @@ The scope follows Microsoft's current AZ-305 outline, effective 17 April 2026. T
 11. Answers and explanations
 12. Final revision and readiness
 13. Reference library
+14. Worked architecture cases
+15. Guided labs and acceptance checks
+16. Screenshot field guide
+17. Further reading and retrieval drills
 
 ## 1 How to use the pack and judge sources
 
@@ -1117,6 +1121,23 @@ The supplied Markdown files are learner-provided preparation material, not indep
 - **S82** [Event Hubs features](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features). Microsoft primary source; documentation checked during preparation.
 - **S83** [Blob lifecycle management](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview). Microsoft primary source; documentation checked during preparation.
 
+- **S84** [Azure resource PIM role settings](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-resource-roles-configure-role-settings). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S85** [Microsoft Entra PIM role settings](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-how-to-change-default-settings). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S86** [Configure a SQL Database failover group](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql&tabs=azure-portal). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S87** [Configure Blob lifecycle management](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure?tabs=azure-portal). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S88** [Manage Immutable vault operations](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S89** [Private endpoint DNS configuration](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S90** [Workload identity federation](https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S91** [Transactional outbox with Cosmos DB](https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-out-box-cosmos). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S92** [Define reliability targets and metrics](https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S93** [Always Encrypted documentation](https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S94** [Shared access signature guidance](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S95** [API Management JWT validation policy](https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S96** [Configure Key Vault key rotation](https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S97** [Restore SQL Database using backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S98** [Failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis). Microsoft primary source; supplemental documentation checked 22 November 2026.
+- **S99** [Azure Load Testing overview](https://learn.microsoft.com/en-us/azure/app-testing/load-testing/overview-what-is-azure-load-testing). Microsoft primary source; supplemental documentation checked 22 November 2026.
+
 ### Link definitions
 
 [S01]: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305 "AZ 305 skills measured"
@@ -1202,4 +1223,323 @@ The supplied Markdown files are learner-provided preparation material, not indep
 [S81]: https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry "Event Grid delivery and retry"
 [S82]: https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features "Event Hubs features"
 [S83]: https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview "Blob lifecycle management"
+[S84]: https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-resource-roles-configure-role-settings "Azure resource PIM role settings"
+[S85]: https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-how-to-change-default-settings "Microsoft Entra PIM role settings"
+[S86]: https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql&tabs=azure-portal "Configure a SQL Database failover group"
+[S87]: https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure?tabs=azure-portal "Configure Blob lifecycle management"
+[S88]: https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage "Manage Immutable vault operations"
+[S89]: https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns "Private endpoint DNS configuration"
+[S90]: https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation "Workload identity federation"
+[S91]: https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-out-box-cosmos "Transactional outbox with Cosmos DB"
+[S92]: https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics "Define reliability targets and metrics"
+[S93]: https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql "Always Encrypted documentation"
+[S94]: https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview "Shared access signature guidance"
+[S95]: https://learn.microsoft.com/en-us/azure/api-management/validate-jwt-policy "API Management JWT validation policy"
+[S96]: https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation "Configure Key Vault key rotation"
+[S97]: https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql "Restore SQL Database using backups"
+[S98]: https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis "Failure mode analysis"
+[S99]: https://learn.microsoft.com/en-us/azure/app-testing/load-testing/overview-what-is-azure-load-testing "Azure Load Testing overview"
 
+## 14 Worked architecture cases
+
+These four original cases connect the syllabus to a defensible design. The organisations, numbers and targets are fictional requirements for practice. Proposed designs are reasoned examples, not Microsoft reference architectures or guarantees. First write your own recommendation; then compare the decisive constraints and failure tests.
+
+### Case A — A regulated client portal
+
+**Domains:** D1 identity and monitoring; D2 data; D4 infrastructure.
+
+**Brief:** A small Australian professional-services firm needs a public HTTPS portal. Employees administer the service, clients upload documents, and the application stores case metadata in a relational database. The firm wants minimal server maintenance and auditable access. A client must never access another client's documents. The starting requirement is one Azure region; regional recovery is a separate budget decision.
+
+**Proposed design:** Start with App Service for the web application, Azure SQL Database for relational metadata and Blob Storage for documents. Use workforce Microsoft Entra identities for staff and evaluate External ID for client identities. Give the application a managed identity and narrowly scoped data permissions. Keep client authorisation in the application: an authenticated user and a valid token do not prove ownership of a requested case. Treat private connectivity, data permissions and business authorisation as three separate controls. [S13][S15][S24][S59]
+
+**Data flow:** Client authenticates, submits a case request, and the API checks the client's entitlement. The API writes metadata and accesses the matching object using its workload identity. If direct browser upload is justified, the backend issues a narrowly scoped, short-lived user delegation SAS for the authorised blob. Record who requested the operation; never log the SAS token. [S94]
+
+**Why this fits:** Managed services reduce operating-system administration. AKS adds orchestration work without an identified requirement for Kubernetes. A VM may become appropriate if an unsupported dependency needs operating-system access. Neither a private endpoint nor Storage Blob Data Contributor creates the application's tenant isolation model. [S10][S51]
+
+**Acceptance evidence:** Attempt cross-client reads, uploads with expired access, access from a disallowed network, and staff administration without an eligible role activation. Check diagnostic records for a failed access attempt and trace one successful request across components. An HTTP 200 home page is insufficient evidence that uploads, authorisation and database writes work. [S20][S23]
+
+**Change one constraint:** The firm must keep document content encrypted from database administrators. Explain why TDE or data masking alone does not meet that threat model; investigate client-side encryption and, for sensitive SQL columns, Always Encrypted, including driver and key-access implications. [S42][S93]
+
+### Case B — A reliable order-processing pipeline
+
+**Domains:** D2 data and integration; D4 application architecture.
+
+**Brief:** A retailer accepts orders during short promotional bursts. Checkout should acknowledge accepted work promptly; fulfilment can continue asynchronously. Payment and dispatch must not happen twice when a message is redelivered. An order's state and its pending integration event must remain consistent.
+
+**Proposed design:** Put an API in front of a durable order store. Persist the order and an outbox record in one transaction, then publish the outbox event to a Service Bus queue. A worker processes the command and records the business operation identifier before completing the message. Use an idempotent payment API or a persisted payment operation key; a broker's duplicate-detection window cannot prevent every duplicate business effect. [S64][S65][S91]
+
+**Partition decision:** In a Cosmos DB implementation, an order and its outbox entry must share the container and logical partition for a transactional batch. Choose the partition key from workload distribution and required transaction boundaries. A date-only key that concentrates a promotion into one hot partition is a warning. In a relational implementation, keep the equivalent writes in a database transaction and use an appropriate publisher. [S32][S33][S91]
+
+**Why this fits:** Service Bus is suited to work that consumers must handle reliably. Event Grid is useful for event notifications but its delivery and retry behaviour still requires idempotency. Event Hubs addresses stream ingestion and replay rather than replacing a business command queue by default. [S64][S81][S82]
+
+**Failure walk-through:** Stop the publisher after the order commit: the pending outbox record must still exist. Stop a worker after charging but before message completion: redelivery must not charge again. Send a poison message: it must stop cycling indefinitely and be visible for investigation. Let downstream processing slow down: observe queue age and backlog, not just worker CPU.
+
+**Acceptance evidence:** Keep an execution log for a repeated operation key, the final order state and a deliberately failed message. Scale workers with backlog and downstream capacity in mind; extra consumers can overwhelm a constrained database. [S54][S65]
+
+**Change one constraint:** Every operation for one order must preserve sequence while unrelated orders run in parallel. Investigate message sessions and the order identifier as a grouping key; do not serialise the entire retailer through a single worker.
+
+### Case C — Recovery for a booking service
+
+**Domains:** D3 business continuity; D2 data; D4 networking.
+
+**Brief:** A booking application has a fictional regional-outage RTO of 60 minutes and RPO of five minutes. Corrupt data must also be recoverable to an earlier point. The business will accept asynchronous replication only after it understands possible data loss. The team has limited out-of-hours staffing.
+
+**Proposed design:** Separate zone resilience, regional failover and historical recovery. Evaluate zone-capable compute and SQL configurations for local faults, a SQL failover group and prepared application capacity in a second region for regional recovery, and automated backups for earlier recovery points. Confirm region, tier, capacity and dependency support rather than assuming that a region pair solves every component. [S28][S29][S49][S50]
+
+**Recovery sequence:** Detect a failed business transaction; confirm the incident and replication state; authorise the chosen failover; recover data services; validate the application's identity, configuration, private DNS and network access; redirect traffic; prove a booking and a read-back; reconcile any uncertain transactions. Assign an owner and a time budget to every step. A database failover command completing within the target does not prove the full application meets its RTO. [S77][S86][S89]
+
+**Why backups remain necessary:** Replication can propagate an unwanted update. Point-in-time restore creates a recovered database rather than rewinding the existing database in place. Plan how to validate it, reconcile later legitimate changes and reconnect the application. Restore duration depends on workload and recovery conditions. [S97]
+
+**Decision caveat:** An RPO requirement is a business tolerance, not a promise inferred from the existence of asynchronous replication. Measure replication and exercise the selected failover mode. If the business changes to zero accepted data loss, revisit write acknowledgement, failure handling and the service's documented guarantees before retaining the design.
+
+**Acceptance evidence:** Record detection time, decision delay, data-service recovery, application validation, traffic change and the last confirmed booking. Repeat a historical restore separately from a regional failover. Include identity-provider and DNS failures in the incident discussion. [S98]
+
+**Change one constraint:** Regional recovery is rarely needed and cost dominates. Compare restoring from geo-redundant backups against a warm secondary, making the longer recovery path and missing capacity reservations explicit. [S77]
+
+### Case D — Move a legacy reporting estate
+
+**Domains:** D4 migration and compute; D2 data; D1 governance.
+
+**Brief:** A manufacturer has a Windows web application, SQL Server jobs and a nightly report process that reads files on-premises. The first release has a short change window and must preserve business output. Modernisation can happen after the migration.
+
+**Decision sequence:** Inventory dependencies and compatibility before choosing a target. Assess whether SQL Database supports the required features, whether Managed Instance fits instance-level dependencies, or whether SQL Server on Azure VMs is necessary. Select a compute target from operating-system, runtime, networking and support requirements. A migration deadline can justify rehosting, but it does not make rehosting the cheapest long-term operating model. [S24][S51][S71][S72]
+
+**Hybrid integration:** If Data Factory must reach an on-premises data source, evaluate a self-hosted integration runtime and its host availability. Document name resolution, routing, firewall access and credentials. A private endpoint to a cloud service does not by itself give that service a path to an on-premises file share. [S40][S59]
+
+**Cutover design:** Rehearse against a representative data copy. Establish the permitted write-freeze duration, perform initial transfer and any supported catch-up, stop the old writers, confirm synchronisation, switch clients and validate record counts plus representative business totals. Give the rollback decision a deadline. If the new system accepts writes, simply redirecting users back can lose or split business transactions; decide how to reconcile them before cutover.
+
+**Acceptance evidence:** Run a complete overnight reporting cycle, reconcile totals and compare duration under representative load. Check service accounts, scheduled jobs, permissions, backup restoration and operations ownership. Infrastructure deployment alone is not business acceptance. Use a load test to investigate throughput and latency rather than guessing from a VM size. [S99]
+
+**Change one constraint:** The application must become independently deployable services within the same deadline. Identify the extra discovery, data ownership, integration and test work; challenge the schedule assumption instead of labelling a VM move as completed modernisation.
+
+## 15 Guided labs and acceptance checks
+
+These are optional practice exercises, not labs already performed for this pack. Each can start as a no-cost design review using the linked documentation. If you implement an exercise, use a disposable learning environment, estimate charges first and keep a cleanup record. Licensing, privileges and service support vary. Do not lock immutable retention in an ordinary disposable lab.
+
+### Lab 1 — Separate role eligibility from application identity
+
+**Map:** D1. **Timebox:** 35 minutes. **Mode:** Design review; optional tenant configuration with suitable licensing.
+
+1. Draw a human administrator activating an eligible Azure role and an application accessing Blob Storage through a managed identity.
+2. Identify the role, assignment scope, activation duration, approval path and audit evidence for the human.
+3. Identify the data-plane permission for the application and a test that fails when it is removed.
+4. Compare Microsoft Entra role settings with Azure resource role settings. For Azure resource PIM, settings at a higher resource scope are not inherited by a lower scope. [S84][S85]
+
+**Pass check:** Explain why PIM activation does not issue the application's storage permissions and why Contributor alone is insufficient evidence of blob data access. Capture only redacted learning-environment evidence. [S10][S13]
+
+### Lab 2 — Design a useful diagnostic route
+
+**Map:** D1. **Timebox:** 30 minutes. **Mode:** Documentation review or a supported disposable resource.
+
+1. Pick one resource type and identify the resource-log categories it actually supports.
+2. Choose Log Analytics for investigation, Storage for a justified archive, or Event Hubs for an external processing path; justify every destination.
+3. Define a harmless event that should appear and the fields needed to investigate it.
+4. Specify retention, sensitive-data handling, alert routing and an owner for checking ingestion. [S20][S21][S23]
+
+**Pass check:** Show an event at the intended destination, or clearly mark the exercise as design-only. Distinguish resource logs from guest operating-system collection through Azure Monitor Agent. Allow for ingestion delay before diagnosing failure. [S19][S20]
+
+### Lab 3 — Remediate a governance gap
+
+**Map:** D1. **Timebox:** 35 minutes. **Mode:** Design review; optional isolated subscription exercise.
+
+1. Choose an audit finding for an existing resource and compare audit, deny, modify and deployIfNotExists effects.
+2. Read the selected policy's roleDefinitionIds and identify the identity used for remediation.
+3. Define the target scope and exclusions, then describe a remediation task for existing non-compliant resources.
+4. Decide how you will check both task execution and the resulting resource configuration. [S17][S79]
+
+**Pass check:** Explain why assigning an audit policy does not repair a resource and why remediation needs appropriate permissions. A green task status should be supported by a configuration check.
+
+### Lab 4 — Choose a blob lifecycle rule
+
+**Map:** D2. **Timebox:** 25 minutes. **Mode:** Policy design; optional test container.
+
+1. Classify a dataset by access frequency, retrieval urgency and mandatory retention.
+2. Propose tier transitions and a precise container/prefix filter; distinguish last-modified from last-accessed conditions.
+3. Check whether access-time tracking is needed for your selected condition.
+4. Explain minimum storage-duration charges, archive retrieval implications and the treatment of versions or snapshots. [S35][S83][S87]
+
+**Pass check:** Given a sample blob name and age, predict the applicable action. Explain why a lifecycle deletion rule is not a legal retention control. Do not wait for an immediate move after saving: policy processing is asynchronous. [S37][S83]
+
+### Lab 5 — Write a SQL regional failover runbook
+
+**Map:** D3 and D2. **Timebox:** 45 minutes. **Mode:** Tabletop; optional two-region learning deployment.
+
+1. Specify the databases, primary and secondary servers, selected failover policy and approval owner.
+2. Use the failover-group listener in the application plan and check secondary-region network and identity dependencies.
+3. Separate planned testing from emergency forced failover and document the data-loss decision.
+4. Time recovery from incident detection to a successful business transaction. [S28][S86]
+
+**Pass check:** Produce a runbook with timestamps, the last confirmed write and rollback/reconciliation steps. A tabletop gives a design estimate; only a measured deployment exercise supports a tested RTO.
+
+### Lab 6 — Recover history and protect retention
+
+**Map:** D3. **Timebox:** 40 minutes. **Mode:** Restore design; optional disposable SQL database.
+
+1. Identify a recovery point before an unwanted update and plan a restore to a new database.
+2. Define business checks and application reconnection steps, then plan cleanup after validation. [S97]
+3. Separately compare backup-vault immutability in enabled/unlocked and locked states.
+4. Check the duration covered by immutability and the applicable workload/region support. [S44][S88]
+
+**Pass check:** Explain why a backup, a replica, soft delete, a resource lock and locked immutability solve different problems. For the vault exercise, use documentation rather than enabling an irreversible lock in a throwaway environment.
+
+### Lab 7 — Validate an App Service slot release
+
+**Map:** D4. **Timebox:** 35 minutes. **Mode:** Release design; optional supported App Service plan.
+
+1. Define separate production and staging configuration and classify which settings should stay with their slots.
+2. Plan warm-up and smoke tests, check source/target before swapping, and identify settings that do not swap.
+3. Plan how application code remains compatible with database schema changes during deployment.
+4. Define rollback checks including a real read/write operation. [S55]
+
+**Pass check:** Explain why swapping code back does not reverse database writes or an incompatible schema migration. Slots share plan resources; include staging load when considering capacity.
+
+### Lab 8 — Diagnose private connectivity in layers
+
+**Map:** D4. **Timebox:** 30 minutes. **Mode:** Troubleshooting design; optional private endpoint learning deployment.
+
+1. Trace the application's normal service hostname through DNS to the intended private IP.
+2. Identify the linked private DNS zone, client network path and any hybrid resolver/forwarder.
+3. Check endpoint approval, routing and applicable network restrictions before testing identity and data permissions.
+4. State separately whether public network access is permitted or disabled. [S59][S89]
+
+**Pass check:** Build a four-row evidence table: name resolution, transport connectivity, authentication and authorisation. A successful name lookup proves only the first layer. A private endpoint is not sufficient evidence that the public endpoint has been disabled.
+
+## 16 Screenshot field guide
+
+These eight genuine Microsoft Learn screenshots are documentation examples retrieved on 22 November 2026. They are not screenshots of your Azure tenant or evidence that a lab has run. Microsoft can change portal labels and available options. Select any image to open the original-size local copy on the website.
+
+Use each image actively: identify the requirement, point to the relevant control, predict a failure, and state the evidence you would collect. The captions supply the architectural interpretation; the image alone is not a complete configuration recipe.
+
+### PIM activation controls — D1
+
+![Microsoft documentation example showing PIM activation duration, authentication, justification and approval controls](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/pim-activation.png)
+
+**Notice:** Duration, authentication requirements, justification and approval are separate decisions. The example has approval unchecked; that is not a recommended policy for every privileged role. The image header shows Microsoft Entra roles, although Microsoft also uses this illustration in its Azure resource role article. Use the correct role family and resource scope in your own design. [S84][S85]
+
+**Retrieve:** What prevents permanent standing privilege, and who can approve an activation if the usual approver is unavailable?
+
+**Source:** Microsoft, [PIM role-settings article](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-resource-roles-configure-role-settings). Unmodified screenshot; MIT licence, MicrosoftDocs/entra-docs. See the attribution register below.
+
+### Diagnostic categories and destinations — D1
+
+![Microsoft documentation example showing resource log categories, metrics and diagnostic destination checkboxes](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/diagnostic-settings.png)
+
+**Notice:** Select data on the left and destinations on the right. Category availability depends on the resource. Do not copy all categories and destinations without a retention, investigation and cost requirement. This controls platform telemetry routing, not guest-agent installation. [S20]
+
+**Retrieve:** If metrics are visible but an audit event is missing, what collection configuration should you inspect first?
+
+**Source:** Microsoft, [Diagnostic settings](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings). Unmodified screenshot; CC BY 4.0.
+
+### Policy remediation identity — D1
+
+![Microsoft documentation example showing the managed identity and permissions for an Azure Policy assignment](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/policy-remediation.png)
+
+**Notice:** Remediation has an identity and permissions. The displayed role is an example for that policy, not a universal permission to grant every assignment. Existing-resource remediation and future request evaluation need distinct checks. [S79]
+
+**Retrieve:** Why can an audit result remain non-compliant after a policy assignment succeeds?
+
+**Source:** Microsoft, [Remediate resources](https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources). Unmodified screenshot; CC BY 4.0.
+
+### Blob lifecycle conditions — D2
+
+![Microsoft documentation example showing a last-modified lifecycle condition and cool, cold, archive and delete actions](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/blob-lifecycle.png)
+
+**Notice:** The example uses last-modified age. Archive is an offline access tier; the tier choice must fit retrieval urgency and minimum-duration economics. A deletion action does not override an immutable retention requirement. [S35][S37][S87]
+
+**Retrieve:** Would an object that has not changed for 90 days but is read every day fit your proposed rule?
+
+**Source:** Microsoft, [Configure lifecycle management](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure?tabs=azure-portal). Unmodified screenshot; CC BY 4.0.
+
+### SQL failover group membership — D3 and D2
+
+![Microsoft documentation example showing a SQL failover group name, secondary server and database-selection control](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/sql-failover-group.png)
+
+**Notice:** A group name and secondary server are not enough: the databases must be selected. The example banner uses a customer-managed failover policy. Choose the policy from your operational requirements and current service behaviour rather than assuming all failover is automatic. [S86]
+
+**Retrieve:** Which connection endpoint should the application use, and which dependencies must exist in the secondary region?
+
+**Source:** Microsoft, [Configure a SQL failover group](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-configure-sql-db?view=azuresql&tabs=azure-portal). Unmodified screenshot; CC BY 4.0.
+
+### Enabled versus locked vault immutability — D3
+
+![Microsoft documentation example showing enabled vault immutability, a 30-day specific duration and an unlocked WORM setting](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/backup-immutability.png)
+
+**Notice:** The image is enabled but unlocked. It also illustrates a specific immutability duration, which may be shorter than overall backup retention. Locking makes the setting irreversible; validate policy and support before that decision. Neither an enabled checkbox nor an Azure resource lock proves permanently protected retention. [S44][S88]
+
+**Retrieve:** For how long is the recovery point immutable, and can an authorised person turn the setting off in the displayed state?
+
+**Source:** Microsoft, [Manage Immutable vault operations](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage). Unmodified screenshot; CC BY 4.0.
+
+### App Service swap review — D4
+
+![Microsoft documentation example showing source and production target slots with a configuration-change preview](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/app-slot-swap.png)
+
+**Notice:** Read the source, target and configuration changes together. The historic runtime values in this image are illustrative and are not current runtime recommendations. Treat database compatibility and external dependencies as separate release checks. [S55]
+
+**Retrieve:** What must be tested before traffic changes, and what would a reverse swap fail to undo?
+
+**Source:** Microsoft, [App Service deployment slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots). Unmodified screenshot; CC BY 4.0.
+
+### Settings that stay with a slot — D4
+
+![Microsoft documentation example highlighting the Deployment slot setting checkbox for an App Service application setting](https://erikw1024.github.io/az-305-study-pack/assets/screenshots/app-slot-settings.png)
+
+**Notice:** A deployment-slot setting is associated with the slot rather than travelling with an ordinary settings swap. Classify environment-specific values deliberately. Consult the documented non-swapped settings and exceptions; do not assume every resource attribute follows this checkbox. [S55]
+
+**Retrieve:** How would you prevent a staging release from using a production-only endpoint before approval?
+
+**Source:** Microsoft, [App Service deployment slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots). Unmodified screenshot; CC BY 4.0.
+
+### Image attribution and reuse
+
+Copyright Microsoft Corporation. The seven Azure documentation screenshots are redistributed under the [Azure documentation repository licence](https://github.com/MicrosoftDocs/azure-docs/blob/main/LICENSE), [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). The PIM screenshot is from the [Microsoft Entra documentation repository](https://github.com/MicrosoftDocs/entra-docs) under its [MIT licence](https://github.com/MicrosoftDocs/entra-docs/blob/main/LICENSE). Images are unmodified original PNGs, displayed at responsive sizes. Microsoft trademarks remain their owners' property; no endorsement is implied. Licence notices and source-image URLs are included in the [image attribution register](https://erikw1024.github.io/az-305-study-pack/ATTRIBUTIONS.md), [source image metadata](https://erikw1024.github.io/az-305-study-pack/screenshot-sources.json) and source package.
+
+## 17 Further reading and retrieval drills
+
+### Choose a reading route by the decision you missed
+
+Avoid reading every article linearly. For each route, write a one-paragraph recommendation before opening the source; revise it afterwards and record what changed.
+
+| Decision to practise | Read next | Produce this evidence |
+| --- | --- | --- |
+| Human privilege activation | Azure resource PIM settings and Microsoft Entra role settings [S84][S85] | Role-family and scope comparison; activation and approval design |
+| Identity for an external automation workload | Workload identity federation [S90] | Trust boundary showing issuer, subject, audience and separately assigned permissions |
+| Private service name resolution | Private endpoint DNS [S89] | Lookup path from Azure and on-premises clients to the intended endpoint |
+| Safe scoped object sharing | Shared access signatures [S94] | Resource, permissions, expiry, transport restriction and handling of leaked access |
+| Sensitive SQL columns | Always Encrypted documentation [S93] | Threat model distinguishing TDE, masking and client-side column encryption |
+| Recover after an unwanted SQL update | Restore using backups [S97] | New-database validation and application reconnection plan |
+| Avoid lost integration events | Transactional outbox example [S91] | Atomic persistence boundary and duplicate-processing strategy |
+| Protect API entry points | API Management JWT validation [S95] | Issuer, audience and required-claim validation plus backend access restrictions |
+| Rotate encryption keys | Key Vault key rotation [S96] | Consumer adoption check and safe treatment of older key versions |
+| Specify a measurable reliability target | Reliability metrics [S92] | Critical user flow, measurement window, SLI and escalation threshold |
+| Expose hidden failure dependencies | Failure mode analysis [S98] | Failure, impact, detection, mitigation and recovery owner |
+| Replace capacity guesses with measurements | Azure Load Testing overview [S99] | Representative workload, latency/error thresholds and a bottleneck hypothesis |
+
+**Three details to retain:** Federation replaces an external workload's stored credential with a trust relationship; it does not assign Azure permissions automatically. For Microsoft Entra-issued tokens, the JWT policy reference points to the dedicated validate-azure-ad-token policy. Key rotation creates a new version, while consumer adoption and continued access to older encrypted data need their own plan. [S90][S95][S96]
+
+### Rapid decision drills with model reasoning
+
+**1. A company says every component has a 99.9% SLA, therefore the whole booking flow has 99.9% availability.** Define the actual flow and include its critical dependencies. As a simplified teaching calculation, three independent serial components at 0.999 each give 0.999 cubed, approximately 99.7003%; independence and identical measurement assumptions may not hold in practice. A workload SLO needs observed user-flow evidence and coverage beyond individual contractual SLAs. [S92]
+
+**2. A deployment includes a private endpoint, but an on-premises client still resolves the public IP.** Inspect the client's resolver path, private zone records and hybrid forwarding. Check connectivity only after resolving the expected address. Separately decide public-access policy; creating the private endpoint does not prove public access is blocked. [S59][S89]
+
+**3. A user has Contributor and can edit a storage account but cannot read a blob with Microsoft Entra authentication.** Distinguish control-plane operations from data-plane permissions. Identify a suitable blob data role at the required scope and check network access separately. Do not solve a narrow data permission gap by handing out account keys. [S10][S13]
+
+**4. The same payment is processed twice although broker duplicate detection is enabled.** Trace producer identifiers, retries, the duplicate-detection window and consumer completion timing. Make the payment operation idempotent and persist its business identifier. Consider an outbox for reliable event publication; an outbox does not make a non-idempotent external side effect exactly once. [S65][S91]
+
+**5. The database fails over successfully, but the application still cannot take bookings.** Inspect connection targets, private DNS, credentials, secondary capacity and other dependencies. Measure RTO to a validated booking rather than to database role change. Keep a separate historical restore path for corrupt data. [S77][S86][S97]
+
+**6. Archive storage looks cheapest, so a team puts daily interactive documents there.** Revisit retrieval latency, rehydration workflow, transaction charges and minimum-duration economics. Optimise the total access pattern rather than storage capacity price alone. [S35][S83]
+
+**7. A team wants Kubernetes because the workload uses containers.** Establish whether it needs Kubernetes APIs, operators or cluster-level control. Compare Container Apps or App Service against the required runtime, scaling and network behaviour, and include the team's operating capability. Container packaging alone does not decide the orchestrator. [S51][S53][S54]
+
+**8. The latest official practice score is high, but the learner cannot explain failed alternatives.** Revisit each guessed answer and write the decisive requirement plus the condition under which another option becomes correct. The official guide now recommends the AI Skills Navigator assessment; it states that the legacy Learn practice assessments are no longer updated. Use the supplied official entry point, and recheck skills measured near the exam date. [S01][S04]
+
+### Fit the new material into the six-week plan
+
+- **Week 1:** Case A, Labs 1–3 and the three D1 screenshots. Explain identity, governance and telemetry as separate responsibilities.
+- **Week 2:** Case B, Lab 4 and the blob screenshot. Draw the transaction, partition and delivery boundaries.
+- **Week 3:** Case C, Labs 5–6 and the two recovery screenshots. Compare failover with historical restore using a timed runbook.
+- **Week 4:** Case D, Labs 7–8 and the slot screenshots. Trace a release and a hybrid name-resolution path.
+- **Week 5:** Rework every case with its changed constraint; complete all eight rapid drills without notes.
+- **Week 6:** Review mistakes after a delay, repeat the official practice assessment within its usage rules and verify the current skills outline. A practice score is a diagnostic, not a guaranteed exam result.

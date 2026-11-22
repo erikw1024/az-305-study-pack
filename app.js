@@ -191,4 +191,3 @@
   document.getElementById('print-pack').addEventListener('click', () => window.print());
   updateReading(); score(); filterQuiz(); activate();
 })();
-
